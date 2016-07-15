@@ -2,12 +2,14 @@
 const path = require('path');
 // const fs = require('fs');
 
-const BUILD_DIR = path.join(__dirname, 'build/');
-const SRC_DIR = path.join(__dirname, 'src/');
+const BUILD_DIR = path.join(__dirname, '..', 'build/');
+const SRC_DIR = path.join(__dirname, '..', 'src/');
 
 const config = {
-  name: 'clientLanding',
+  HOT_PORT: 8080,
+  name: 'development',
   entry: [
+    'babel-polyfill',
     `${SRC_DIR}index.js`
   ],
   output: {
@@ -19,13 +21,10 @@ const config = {
       {
         test: /.js$|.jsx$/,
         include: SRC_DIR,
-        loaders: ['babel'],
-        query: {
-          presets: ['react', 'es2015', 'stage-0']
-        }
+        loaders: ['babel']
       }
     ]
   }
 };
 
-export default config;
+module.exports = config;
