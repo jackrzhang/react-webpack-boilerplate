@@ -1,6 +1,6 @@
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const path = require('path');
-const fs = require('fs');
+// const fs = require('fs');
 
 const BUILD_DIR = path.join(__dirname, 'build/');
 const SRC_DIR = path.join(__dirname, 'src/');
