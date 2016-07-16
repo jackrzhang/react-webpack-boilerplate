@@ -7,8 +7,8 @@
   "private": true,
   "scripts": {
     "start": "node webpack/devServer.js",
-    "clean": "rm -rf build",
-    "build": "npm run clean && NODE_ENV=production webpack --config webpack/config.prod.js",
+    "clean": "rm build/bundle.js; rm build/bundle.js.map",
+    "build": "npm run clean; NODE_ENV=production webpack --config webpack/config.prod.js",
     "production": "npm run build && NODE_ENV=production node src/server.js",
     "lint": "./node_modules/.bin/eslint webpack src || true",
     "test": "echo \"Error: no test specified\" && exit 1"
