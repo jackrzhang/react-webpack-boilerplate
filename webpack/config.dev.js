@@ -11,6 +11,7 @@ const config = {
   entry: [
     // 'babel-polyfill',
     'webpack-hot-middleware/client?reload=true',
+    'webpack/hot/only-dev-server',
     `${SRC_DIR}index.js`
   ],
   output: {
@@ -22,7 +23,7 @@ const config = {
       {
         test: /.js$|.jsx$/,
         include: SRC_DIR,
-        loaders: ['babel']
+        loaders: ['react-hot', 'babel']
       }
     ]
   },
