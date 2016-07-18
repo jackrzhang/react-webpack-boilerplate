@@ -12,7 +12,7 @@ A **simple**, **powerful** starter kit for **modern** JS web development. This w
   * [CSS Modules](https://github.com/css-modules/css-modules), so you can just name your classes intuitively
   * [Autoprefixer](https://github.com/postcss/autoprefixer), for automated cross-browser compatibility
   * [CSSNext](http://cssnext.io/), for CSS4 goodies
-* [Mocha](http://mochajs.org/) unit testing, with [Enzyme](http://airbnb.io/enzyme/) testing utilities for React
+* [Mocha](http://mochajs.org/) and [Chai](http://chaijs.com/) unit testing, with [Enzyme](http://airbnb.io/enzyme/) testing utilities for React
 
 ##Stuff Not Included
 All of the following are awesome, but they **add complexity that you don't need right away**. Definitely still check them out, especially as your application grows larger and requires performance optimizations.
@@ -33,6 +33,7 @@ npm install
 
 ###Development
 ```sh
+npm run clean
 npm start
 open http://localhost:8080
 ```

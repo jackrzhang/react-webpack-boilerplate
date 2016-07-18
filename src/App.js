@@ -6,6 +6,9 @@ import Subtitle from './Subtitle';
 // react-hot-loader prior to version 3 does not
 // support stateless functional root components
 class App extends Component {
+  // Method declared for testing purposes
+  componentDidMount() {}
+
   render() {
     return (
       <div className={styles.app}>
