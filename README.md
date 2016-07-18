@@ -21,6 +21,9 @@ All of the following are awesome, but they **add complexity that you don't need 
 * [Redux](http://redux.js.org/)
 * [Immutable.js](https://facebook.github.io/immutable-js/)
 
+##Prerequisites
+[Node.js](https://nodejs.org) v6+
+
 ##Usage
 ###Installation
 ```sh
@@ -28,6 +31,7 @@ git clone https://github.com/jackrzhang/react-webpack-boilerplate.git
 cd react-webpack-boilerplate
 rm -rf .git
 git init
+rm hot-reloading.gif
 npm install
 ```
 
