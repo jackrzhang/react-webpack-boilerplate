@@ -2,8 +2,7 @@
   "extends": "airbnb",
   "env": {
     "browser": true,
-    "node": true,
-    "mocha": true
+    "node": true
   },
   "ecmaFeatures": {
     "generators": true,

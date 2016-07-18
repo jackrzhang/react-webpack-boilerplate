@@ -1,15 +1,12 @@
+/* eslint-disable global-require */
 const webpack = require('webpack');
-const path = require('path');
-// const fs = require('fs');
-
-const BUILD_DIR = path.join(__dirname, '..', 'build/');
-const SRC_DIR = path.join(__dirname, '..', 'src/');
+const { BUILD_DIR, SRC_DIR } = require('./constants');
 
 const config = {
   HOT_PORT: 8080,
   name: 'development',
   entry: [
-    // 'babel-polyfill',
+    'babel-polyfill',
     'webpack-hot-middleware/client?reload=true',
     'webpack/hot/only-dev-server',
     `${SRC_DIR}index.js`
@@ -24,6 +21,10 @@ const config = {
         test: /.js$|.jsx$/,
         include: SRC_DIR,
         loaders: ['react-hot', 'babel']
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader?modules&importLoaders=1!postcss-loader'
       }
     ]
   },
@@ -34,7 +35,13 @@ const config = {
     // new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ]
+  ],
+  postcss: (webpackArg) => [
+    require('postcss-import')({ addDependencyTo: webpackArg }),
+    require('precss'),
+    require('postcss-cssnext')
+  ],
+  devtool: 'eval-source-map'
 };
 
 module.exports = config;
