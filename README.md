@@ -54,5 +54,8 @@ npm run lint
 npm run test
 ```
 
+###Hot Reloading Demo
+![test](hot-reloading.gif)
+
 ##License
 [MIT](https://github.com/jackrzhang/react-webpack-boilerplate/blob/master/LICENSE)
