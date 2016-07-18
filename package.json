@@ -8,8 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node webpack/devServer.js",
-    "clean": "rm build/bundle.js; rm build/bundle.js.map",
-    "build": "npm run clean; NODE_ENV=production webpack --config webpack/config.prod.js",
+    "build": "NODE_ENV=production webpack --config webpack/config.prod.js",
     "production": "npm run build && open build/index.html",
     "lint": "./node_modules/.bin/eslint webpack src || true",
     "test": "echo \"Error: no test specified\" && exit 1"
