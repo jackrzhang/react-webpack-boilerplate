@@ -1,4 +1,6 @@
 #React Webpack Boilerplate
+[![Build Status](https://travis-ci.org/jackrzhang/react-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/jackrzhang/react-webpack-boilerplate)
+
 A **simple**, **powerful** starter kit for **modern** JS web development. This was created primarily for educational purposes, but it can be used to bootstrap production-grade web Applications.
 
 ##Features
