@@ -39,6 +39,7 @@ const config = {
   postcss: (webpackArg) => [
     require('postcss-import')({ addDependencyTo: webpackArg }),
     require('postcss-url'),
+    require('postcss-assets'),
     require('precss'),
     require('postcss-cssnext')
   ],

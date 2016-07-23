@@ -5,9 +5,9 @@ const webpackHotMiddleware = require('webpack-hot-middleware');
 const configDev = require('./config.dev');
 
 const app = express();
-const compiler = webpack(configDev);
-
 app.use(express.static('build'));
+
+const compiler = webpack(configDev);
 
 app.use(webpackDevMiddleware(compiler, {
   publicPath: configDev.output.publicPath,

@@ -33,6 +33,7 @@
     "ignore-styles": "^4.0.0",
     "jsdom": "^9.4.1",
     "mocha": "^2.5.3",
+    "postcss-assets": "^4.1.0",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",
