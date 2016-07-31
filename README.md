@@ -1,5 +1,7 @@
 #React Webpack Boilerplate
 [![Build Status](https://travis-ci.org/jackrzhang/react-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/jackrzhang/react-webpack-boilerplate)
+[![dependencies Status](https://david-dm.org/jackrzhang/react-webpack-boilerplate/status.svg)](https://david-dm.org/jackrzhang/react-webpack-boilerplate)
+[![devDependencies Status](https://david-dm.org/jackrzhang/react-webpack-boilerplate/dev-status.svg)](https://david-dm.org/jackrzhang/react-webpack-boilerplate?type=dev)
 
 A **simple**, **powerful** starter kit for **modern** JS web development. This was created primarily for educational purposes, but it can be used to bootstrap production-grade web Applications.
 
@@ -14,7 +16,7 @@ A **simple**, **powerful** starter kit for **modern** JS web development. This w
   * [CSS Modules](https://github.com/css-modules/css-modules), so you can just name your classes intuitively
   * [Autoprefixer](https://github.com/postcss/autoprefixer), for automated cross-browser compatibility
   * [CSSNext](http://cssnext.io/), for CSS4 goodies
-* [Mocha](http://mochajs.org/) and [Chai](http://chaijs.com/) unit testing, with [Enzyme](http://airbnb.io/enzyme/) testing utilities for React
+* [Mocha](http://mochajs.org/), [Chai](http://chaijs.com/), and [Sinon](http://sinonjs.org/) unit testing, with [Enzyme](http://airbnb.io/enzyme/) testing utilities for React
 
 ##Stuff Not Included
 All of the following are awesome, but they **add complexity that you don't need right away**. Check them out later, especially as your application grows larger and requires performance optimizations.
