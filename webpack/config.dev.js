@@ -6,9 +6,7 @@ const config = {
   HOT_PORT: 8080,
   name: 'development',
   entry: [
-    'babel-polyfill',
     'webpack-hot-middleware/client?reload=true',
-    'webpack/hot/only-dev-server',
     `${SRC_DIR}index.js`
   ],
   output: {
@@ -29,10 +27,7 @@ const config = {
     ]
   },
   plugins: [
-    // Webpack 1.0
     new webpack.optimize.OccurenceOrderPlugin(),
-    // Webpack 2.0 fixed this mispelling
-    // new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
