@@ -4,7 +4,6 @@ const { BUILD_DIR, SRC_DIR } = require('./constants');
 const config = {
   name: 'production',
   entry: [
-    'babel-polyfill',
     `${SRC_DIR}index.js`
   ],
   output: {
