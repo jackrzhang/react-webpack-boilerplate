@@ -6,9 +6,7 @@ const config = {
   HOT_PORT: 8080,
   name: 'development',
   entry: [
-    'babel-polyfill',
     'webpack-hot-middleware/client?reload=true',
-    'webpack/hot/only-dev-server',
     `${SRC_DIR}index.js`
   ],
   output: {
