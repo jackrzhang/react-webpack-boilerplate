@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 const { BUILD_DIR, SRC_DIR } = require('./constants');
 
 const config = {
@@ -23,6 +24,13 @@ const config = {
       }
     ]
   },
+  postcss: (webpackArg) => [
+    require('postcss-import')({ addDependencyTo: webpackArg }),
+    require('postcss-url'),
+    require('postcss-assets'),
+    require('precss'),
+    require('postcss-cssnext')
+  ],
   devtool: 'source-map'
 };
 
