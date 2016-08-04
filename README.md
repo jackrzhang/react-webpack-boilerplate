@@ -19,7 +19,7 @@ A **simple**, **powerful** starter kit for **modern** JS web development. This w
 * [Mocha](http://mochajs.org/), [Chai](http://chaijs.com/), and [Sinon](http://sinonjs.org/) unit testing, with [Enzyme](http://airbnb.io/enzyme/) testing utilities for React
 
 ##Stuff Not Included
-All of the following are awesome, but they **add complexity that you don't need right away**. Check them out later, especially as your application grows larger and requires performance optimizations.
+All of the following are great for various reasons, but they **add complexity that you don't need right away**. Check them out later, especially as your application grows larger and requires performance optimizations.
 * [Server-side rendering with React](http://jamesknelson.com/universal-react-youre-doing-it-wrong/)
 * [React Router](https://github.com/reactjs/react-router)
 * [Redux](http://redux.js.org/)
